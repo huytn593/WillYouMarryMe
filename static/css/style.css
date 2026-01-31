@@ -1,0 +1,118 @@
+/* Reset and Base Styles */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Helvetica, Arial, sans-serif;
+    background-color: #EAD4D8; /* Light pink/pastel */
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 100vh;
+    overflow: hidden; /* Prevent scrolling when button runs away */
+}
+
+.container {
+    text-align: center;
+    width: 100%;
+    max-width: 600px;
+    padding: 20px;
+}
+
+/* Header Image */
+.header-image {
+    margin-bottom: 2rem;
+}
+
+.cat-img {
+    max-width: 150px;
+    height: auto;
+}
+
+/* Main Text */
+.main-text {
+    font-size: 2rem;
+    color: #000;
+    margin-bottom: 2.5rem;
+    font-weight: bold;
+}
+
+/* Buttons */
+.buttons-container {
+    display: flex;
+    justify-content: center;
+    gap: 20px;
+    position: relative;
+    min-height: 150px; /* Space for subtext */
+}
+
+.btn {
+    border: none;
+    padding: 12px 32px;
+    font-size: 1.1rem;
+    border-radius: 50px;
+    cursor: pointer;
+    transition: transform 0.2s ease;
+}
+
+.yes-btn {
+    background-color: #E94D58; /* Pink button */
+    color: white;
+    font-weight: 600;
+}
+
+.yes-btn:hover {
+    background-color: #d13d48;
+    transform: scale(1.05);
+}
+
+.no-btn-wrapper {
+    position: relative;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.no-btn {
+    background-color: #F0F0F0; /* Grey background */
+    color: black;
+    font-weight: 600;
+    /* Important for absolute positioning logic in JS */
+    position: relative; 
+    z-index: 10;
+}
+
+.shy-text {
+    margin-top: 8px;
+    font-size: 0.8rem;
+    color: #555;
+    white-space: nowrap;
+}
+
+/* Celebration State */
+.hidden {
+    display: none;
+}
+
+#celebration-content {
+    animation: fadeIn 0.5s ease-in;
+}
+
+.yay-text {
+    font-size: 3rem;
+    color: #000;
+    margin-bottom: 2rem;
+}
+
+.celebration-img {
+    max-width: 100%;
+    border-radius: 10px;
+}
+
+@keyframes fadeIn {
+    from { opacity: 0; transform: translateY(20px); }
+    to { opacity: 1; transform: translateY(0); }
+}

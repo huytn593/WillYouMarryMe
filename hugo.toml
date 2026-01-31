@@ -1,0 +1,7 @@
+baseURL = 'https://huytn593.github.io/WillYouMarryMe/'
+languageCode = 'en-us'
+title = 'Valentine Proposal'
+theme = []
+
+[params]
+  description = "A Valentine Proposal Website"
